@@ -15,7 +15,7 @@ What it does:
 
 In order to test the function you should issue this command
 ```
-curl --header "Content-Type: application/json" --data '{"username":"xyz","password":"red"}' http://${BASE_URL}:${PORT}/api
+curl --header "Content-Type: application/json" --data '{"username":"xyz","password":"uvw"}' http://${BASE_URL}:${PORT}/api
 ```
 Where is BASE_URL is the first line ot the output at the end of the execution of "terraform apply", something like 
 ```
@@ -30,5 +30,11 @@ Method
 POST
 
 Body
-"{\"username\":\"xyz\",\"password\":\"red\"}"
+"{\"username\":\"xyz\",\"password\":\"uvw\"}"
 ```
+
+You can use the included Jenkinsfile.
+- you should replace AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY with your own,
+- but you should better protect your credentials by using "shared_credentials_file" in the AWS provider section in main.tf
+
+

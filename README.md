@@ -14,8 +14,13 @@ What it does:
 9. Gives API Gateway permission to invoke the lambda function
 
 In order to test the function you should issue this command
+```
 curl --header "Content-Type: application/json" --data '{"username":"xyz","password":"red"}' http://${BASE_URL}:${PORT}/api
-( where is BASE_URL is the first line ot the output at the end of the execution of "terraform apply", something like base_url = "https://<some_string>.execute-api.eu-central-1.amazonaws.com/api")
+```
+Where is BASE_URL is the first line ot the output at the end of the execution of "terraform apply", something like 
+```
+base_url = "https://<some_string>.execute-api.eu-central-1.amazonaws.com/api"
+```
 
 You should get a response like this
 ```

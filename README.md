@@ -1,4 +1,4 @@
-This is a Terraform module to deploy a lambda function in AWS.
+This is a Terraform module to deploy a lambda function with HTTP API in AWS.
 
 It is based on https://learn.hashicorp.com/tutorials/terraform/lambda-api-gateway?in=terraform/aws).
 
